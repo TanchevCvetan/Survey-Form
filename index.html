@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="main">
+  <header>
+    <h1 id="title">Survey Form</h1>
+
+  </header>
+  <form id="survey-form">
+
+    <div class="main">
+      <p id="description">Let us know how to improve FreeCodeCamp</p>
+      <div class="group1">
+        <div class="label"> <label id="name-label">*NAME:</label></div>
+        <input id="name" type="text" name="name" placeholder="Enter your Name" required></input>
+        <div class="label"><label id="email-label">*EMAIL:</label></div>
+        <input id="email" type="email" name="email" placeholder="Enter your Email" required></input>
+        <div class="label"><label id="number-label">*AGE:</label></div>
+        <input id="number" type="Number" name="age" placeholder="Age" min="1" max="99" required></input>
+        <div class="label">
+        </div>
+
+        <div class="group">
+          <div class="label"><label>Which option best describes your current role?</label></div>
+
+          <select id="dropdown" name="job">
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Full Time Learner</option>
+  <option>Prefer not to say</option>
+   <option>Other</option>
+        </select>
+        </div>
+        <div class="group">
+          <div class="label label-up"><label>* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+          <ul style="list-style: none;">
+            <li><label>Definitely<input name="radio-buttons" value="1"  type="radio"></label></li>
+            <li><label>Maybe<input name="radio-buttons" value="2"  type="radio"></label></li>
+            <li><label>Not sure<input name="radio-buttons" value="3"  type="radio"></label></li>
+          </ul>
+        </div>
+        <div class="group">
+          <div class="label"><label>What do you like most in FCC:</label></div>
+          <select id="dropdown" name="like">
+  <option disabled selected value>Select an option</option>
+  <option>Challenges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>Open Source</option>
+      </select>
+        </div>
+        <div class="group">
+          <div class="label label-up"><label>Things that should be improved in the future
+      (Check all that apply):</label></div>
+         
+          <ul style="list-style: none;">
+            <li><label>Front-end Projects<input name="prefer" value="1"  type="checkbox"></label></li>
+            <li><label>Back-end Projects<input name="prefer" value="2"  type="checkbox"></label></li>
+            <li><label>Data Visualization<input name="prefer" value="3"  type="checkbox"></label></li>
+            <li><label>Challenges<input name="prefer" value="4"  type="checkbox"></label></li>
+            <li><label>Open Source Community<input name="prefer" value="5"  type="checkbox"></label></li>
+            <li><label>Gitter help rooms<input name="prefer" value="6"  type="checkbox"></label></li>
+            <li><label>Videos<input name="prefer" value="7"  type="checkbox"></label></li>
+            <li><label>City Meetups<input name="prefer" value="8"  type="checkbox"></label></li>
+            <li><label>Wiki<input name="prefer" value="9"  type="checkbox"></label></li>
+            <li><label>Forum<input name="prefer" value="10"  type="checkbox"></label></li>
+            <li><label>Additional Courses<input name="prefer" value="11"  type="checkbox"></label></li>
+          </ul>
+        </div>
+        <div class="group">
+        <div class="label label-up"><label>Any Comments or Suggestions?</label></div>
+        <textarea name="comment">Enter your comment here...</textarea>
+  
+        <button id="submit" type="submit">Submit</button>
+  </div>
+      </div>
+  </form>
+
+  </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
